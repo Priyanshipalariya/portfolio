@@ -37,8 +37,8 @@ const Skills = () => {
     <section id="skills" className="py-16 px-8 border-b border-gray-200">
       <div className=" max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-5xl font-bold mb-6">Skills & Technologies</h2>
-          <p className="text-sm md:text-lg  max-w-5xl font-serif mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">Skills & Technologies</h2>
+          <p className="text-md md:text-lg  max-w-5xl font-serif mx-auto">
             Here are the technologies and tools I work with to bring ideas to life.
           </p>
         </div>

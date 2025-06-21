@@ -122,8 +122,8 @@ const Contact = () => {
     <section id="contact" className="py-16 px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-5xl font-bold mb-6">Get In Touch</h2>
-          <p className="text-sm md:text-lg  max-w-5xl mx-auto font-serif">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">Get In Touch</h2>
+          <p className="text-md md:text-lg  max-w-5xl mx-auto font-serif">
             I'd love to hear from you.
             Let's create something amazing together.
           </p>
