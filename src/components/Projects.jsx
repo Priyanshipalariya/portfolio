@@ -27,7 +27,7 @@ description: "A web application that connects blood donors with recipients in re
       image: "https://res.cloudinary.com/dfelqef5x/image/upload/v1750358412/j5xliuywi2ntrupaqaeq.webp",
       tech: ["React", "TypeScript", "Tailwind CSS"],
       github: "https://github.com/Priyanshipalariya/portfolio",
-      live: "#"
+      live: "https://priyanshipalariya-portfolio.netlify.app/"
     }
   ];
 
