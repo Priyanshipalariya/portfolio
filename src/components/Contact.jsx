@@ -1,7 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Button } from "./ui/Button";
-import { Input, TextArea} from "./ui/input";
+import { Input, TextArea} from "./ui/Input";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/Card";
 import { IoMailOutline, IoCallOutline, IoLocateOutline, IoSendOutline} from "react-icons/io5";
 import { FiCode, FiGithub, FiLinkedin } from "react-icons/fi";
