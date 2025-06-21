@@ -35,8 +35,8 @@ description: "A web application that connects blood donors with recipients in re
     <section id="projects" className="py-16 px-8 border-b border-gray-200">
       <div className="max-w-7xl mx-auto ">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Featured Projects</h2>
-          <p className="text-lg  max-w-5xl mx-auto font-serif">
+          <h2 className="text-2xl md:text-5xl font-bold mb-6">Featured Projects</h2>
+          <p className="text-sm md:text-lg  max-w-5xl mx-auto font-serif">
             Here are some of my recent projects that showcase my skills and experience in web development.
           </p>
         </div>

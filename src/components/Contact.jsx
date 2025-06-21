@@ -1,9 +1,9 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Button } from "./ui/Button";
-import { Input, TextArea} from "./ui/Input";
+import { Input, TextArea } from "./ui/Input";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/Card";
-import { IoMailOutline, IoCallOutline, IoLocateOutline, IoSendOutline} from "react-icons/io5";
+import { IoMailOutline, IoCallOutline, IoLocateOutline, IoSendOutline } from "react-icons/io5";
 import { FiCode, FiGithub, FiLinkedin } from "react-icons/fi";
 import { useToast } from "../hooks/useToast";
 import { contactFormConfig } from "../config/formConfig";
@@ -28,7 +28,7 @@ const Contact = () => {
 
   const handleSubmit = async (values, { setSubmitting, resetForm, setFieldError }) => {
     console.log("Form submitted:", values);
-    
+
     try {
       // Submit to your backend API
       const response = await fetch(contactFormConfig.action, {
@@ -47,14 +47,14 @@ const Contact = () => {
       setSubmitting(false);
       resetForm();
       showSuccess(contactFormConfig.messages.success, 4000);
-      
+
     } catch (error) {
       console.error('Form submission error:', error);
       setSubmitting(false);
-      
+
       // Show error toast
       showError(contactFormConfig.messages.error, 4000);
-      
+
       // Optionally set field errors
       setFieldError('email', 'Failed to send message. Please try again.');
     }
@@ -96,7 +96,7 @@ const Contact = () => {
     }
   ];
 
-  const hubs =  [
+  const hubs = [
     {
       icon: <FiGithub className="w-6 h-6" />,
       title: "GitHub",
@@ -115,38 +115,40 @@ const Contact = () => {
       value: "https://www.linkedin.com/in/priyanshi-palariya-92412831b ",
       href: "https://www.linkedin.com/in/priyanshi-palariya-92412831b "
     },
-    
+
   ];
 
   return (
     <section id="contact" className="py-16 px-8">
-    <div className="max-w-7xl mx-auto">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
-        <p className="text-lg  max-w-5xl mx-auto font-serif">
-          I'd love to hear from you. 
-          Let's create something amazing together.
-        </p>
-      </div>
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-10">
+          <h2 className="text-2xl md:text-5xl font-bold mb-6">Get In Touch</h2>
+          <p className="text-sm md:text-lg  max-w-5xl mx-auto font-serif">
+            I'd love to hear from you.
+            Let's create something amazing together.
+          </p>
+        </div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-16">
-        <div >
-          <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
-          <div className="space-y-1 mb-4">
-            {contactInfo.map((info, index) => (
-              <a
-                key={index}
-                href={info.href}
-                target="_blank"
-                className="flex items-center space-x-2 p-4 rounded-lg transition-colors duration-200"
-              >
-                <div >{info.icon}</div>
-                <div>
-                  <p className="font-medium">{info.title}</p>
-                  <p>{info.value}</p>
-                </div>
-              </a>
-            ))}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-16">
+          <div >
+            <h3 className="text-2xl font-semibold mb-6 hidden sm:block">Contact Information</h3>
+            <div className="flex items-center justify-center sm:justify-start ">
+            <div className="space-y-1 mb-4 ">
+              {contactInfo.map((info, index) => (
+                <a
+                  key={index}
+                  href={info.href}
+                  target="_blank"
+                  className="flex items-center space-x-2 p-4 rounded-lg transition-colors duration-200"
+                >
+                  <div >{info.icon}</div>
+                  <div>
+                    <p className="font-medium">{info.title}</p>
+                    <p>{info.value}</p>
+                  </div>
+                </a>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -181,7 +183,7 @@ const Contact = () => {
               initialValues={initialValues}
             >
               {({ isSubmitting }) => (
-                <Form 
+                <Form
                   className="space-y-4"
                   action={contactFormConfig.action}
                   method={contactFormConfig.method}
@@ -228,7 +230,7 @@ const Contact = () => {
         </Card>
       </div>
     </div>
-  </section>
+  </section >
 );
 
 };

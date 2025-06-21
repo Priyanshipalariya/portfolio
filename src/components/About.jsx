@@ -44,8 +44,8 @@ const About = () => {
     <section id="about" className="py-16 border-b border-gray-200 px-8 ">
       <div className="max-w-7xl mx-auto ">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">About Me</h2>
-          <p className="text-lg max-w-5xl mx-auto font-serif">
+          <h2 className="text-2xl md:text-5xl font-bold mb-6">About Me</h2>
+          <p className="text-sm md:text-lg max-w-5xl mx-auto font-serif">
           I'm a passionate developer eager to craft digital solutions that make an impact. I enjoy turning complex challenges into clean, user-friendly experiences, and I'm constantly exploring new technologies to grow as a developer.
           </p>
         </div>
@@ -54,7 +54,7 @@ const About = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md text-center "
+              className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md text-center transition-transform duration-200 hover:scale-105 "
             >
               <div className="text-primary mb-4 flex justify-center">
                 {service.icon}

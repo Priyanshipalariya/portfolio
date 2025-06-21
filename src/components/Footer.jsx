@@ -40,9 +40,9 @@ const Footer = () => {
           </div>
         </div> */}
 
-        <div className="border-t border-gray-300 py-4 text-center text-gray-500">
-          <p > © {currentYear} Portfolio.</p>
-          <p className="flex items-center justify-center gap-2 text-gray-500 py-2">
+        <div className="border-t border-gray-300 py-4 text-center text-gray-700">
+          <p className="font-semibold "> © {currentYear} Portfolio.</p>
+          <p className="flex items-center justify-center gap-2 py-2">
             Made with <IoHeartOutline className="w-4 h-4 text-red-600" /> using React & TypeScript
           </p>
         </div>
