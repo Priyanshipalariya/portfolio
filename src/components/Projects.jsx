@@ -10,8 +10,8 @@ const Projects = () => {
       description: "A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
       image: "https://res.cloudinary.com/dfelqef5x/image/upload/v1750358401/fa2hdj4ic5xafxjdbnvi.jpg",
       tech: ["React", "Node.js", "MongoDB"],
-      github: "https://github.com/Priyanshipalariya/shop",
-      live: ""
+      github: "https://github.com/Priyanshipalariya/forever-full-stack",
+      live: "https://forever-frontend-lyart.vercel.app/"
     },
     {
       title: "Blood Bond Platform",
