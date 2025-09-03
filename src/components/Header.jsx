@@ -14,7 +14,14 @@ const Header = () => {
 
   const scrollToSection = (href) => {
     const element = document.querySelector(href);
-    element?.scrollIntoView({ behavior: "smooth" });
+    if (element) {
+      const headerHeight = 64; // 4rem = 64px
+      const elementPosition = element.offsetTop - headerHeight;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth"
+      });
+    }
     setIsMenuOpen(false);
   };
 

@@ -6,7 +6,14 @@ import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 const Hero = () => {
   const scrollToSection = (href) => {
     const element = document.querySelector(href);
-    element?.scrollIntoView({ behavior: "smooth" });
+    if (element) {
+      const headerHeight = 64; // 4rem = 64px
+      const elementPosition = element.offsetTop - headerHeight;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth"
+      });
+    }
   };
 
   return (
@@ -18,10 +25,10 @@ const Hero = () => {
           <div className="mb-8 flex justify-center lg:w-1/3 items-center">
             <Avatar className="w-40 h-40 md:w-50 md:h-50 lg:w-70 lg:h-70 ">
               <AvatarImage
-                src="https://res.cloudinary.com/dfelqef5x/image/upload/v1750356489/ssxg4htqemnmrjiokuvp.jpg"
+                src="https://res.cloudinary.com/dfelqef5x/image/upload/v1756876865/je04cizydr7yybtoh4io.png"
                 alt="Profile Photo"
               />
-              <AvatarFallback className="text-2xl font-bold">YN</AvatarFallback>
+              <AvatarFallback className="text-2xl font-bold">PP</AvatarFallback>
             </Avatar>
           </div>
 
